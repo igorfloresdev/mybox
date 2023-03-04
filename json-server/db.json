@@ -3,6 +3,7 @@
         {
             "id": 1,
             "username": "Igor Flores",
+            "password": "igorfloresdev",
             "authToken": "igorflorestokenexample1234"
         }
     ]
