@@ -1,4 +1,4 @@
-const Card = ({title, text, button, children}) => {
+const Card = ({title, text, button, children, action}) => {
   return (
     <div className="card card-side bg-base-100 shadow-xl">
       <div className="card-body">
@@ -6,7 +6,7 @@ const Card = ({title, text, button, children}) => {
         <p>{text}</p>
         {children}
         <div className="card-actions justify-end">
-          <button className="btn btn-primary">{button}</button>
+          <button onClick={action} className="btn btn-primary">{button}</button>
         </div>
       </div>
     </div>
