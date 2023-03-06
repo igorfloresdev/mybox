@@ -2,7 +2,7 @@
     "users": [
         {
             "id": 1,
-            "username": "Igor Flores",
+            "username": "igorflores",
             "password": "igorfloresdev",
             "authToken": "igorflorestokenexample1234"
         }
