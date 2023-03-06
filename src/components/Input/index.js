@@ -1,6 +1,11 @@
-const Input = ({type = "text", placeholder, className}) => {
+const Input = ({type = "text", placeholder, className, getValue}) => {
+
+    const inputValue = (event) => {
+        getValue(event.target.value)
+    }
+
     return (
-        <input type={type} placeholder={placeholder} className={`input input-bordered w-full max-w-xs ${className}`} />
+        <input onChange={inputValue} type={type} placeholder={placeholder} className={`input input-bordered w-full max-w-xs ${className}`} />
     )
 }
 
