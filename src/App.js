@@ -1,4 +1,5 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Dashboard from './pages/private/Dashboard';
 import Login from './pages/public/Login';
 import NotFound from './pages/public/NotFound';
 
@@ -7,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path='/' element={<Login />} />
+        <Route path='/dashboard' element={<Dashboard />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
     </Router>
