@@ -7,7 +7,7 @@ const auth = () => {
   const menuItems = [
     {
       name: 'Dashboard',
-      link: '/auth'
+      link: '/auth/dashboard'
     },
     {
       name: 'Produtos',
