@@ -21,7 +21,7 @@ const Login = () => {
 
   useEffect( () => {
     if(cookies.authToken) {
-      navigate('/dashboard')
+      navigate('/auth')
     }
   })
   
@@ -30,7 +30,7 @@ const Login = () => {
     .then(response => {
       if (response.data[0]) {
         setCookie('authToken', response.data[0].authToken)
-        navigate('/dashboard')
+        navigate('/auth')
       } else {
         setToastText('Login ou senha incorreto !')
         setToastDisplay(true)
