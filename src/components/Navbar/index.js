@@ -14,7 +14,7 @@ const Navbar = ({children, menuItems}) => {
                         </label>
                     </div>
                     <div className="flex-1">
-                        <NavLink to={'/auth'} className="btn btn-ghost normal-case text-lg">
+                        <NavLink to={'/auth/dashboard'} className="btn btn-ghost normal-case text-lg">
                             <BsBoxSeam className="mr-2" size={22} />
                             MyBox
                         </NavLink>
