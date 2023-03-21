@@ -1,10 +1,50 @@
 {
-    "users": [
-        {
-            "id": 1,
-            "username": "igorflores",
-            "password": "igorfloresdev",
-            "authToken": "igorflorestokenexample1234"
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "username": "igorflores",
+      "password": "igorfloresdev",
+      "authToken": "igorflorestokenexample1234"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "userId": 1,
+      "name": "Hardware"
+    },
+    {
+      "id": 2,
+      "userId": 1,
+      "name": "Livros"
+    },
+    {
+      "id": 3,
+      "userId": 1,
+      "name": "Limpeza"
+    }
+  ],
+  "products": [
+    {
+      "userId": "1",
+      "categorieName": "Limpeza",
+      "quantity": "12313",
+      "name": "teste",
+      "id": 1
+    },
+    {
+      "categorieName": "Hardware",
+      "userId": "1",
+      "quantity": "1313",
+      "name": "123123",
+      "id": 2
+    },
+    {
+      "userId": "1",
+      "categorieName": "Hardware",
+      "quantity": "123",
+      "name": "aaa",
+      "id": 3
+    }
+  ]
 }
