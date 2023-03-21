@@ -1,8 +1,20 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import { BsBoxSeam } from 'react-icons/bs'
+import { AiOutlineLogout } from 'react-icons/ai';
+import Button from '../Button';
+import { useNavigate } from 'react-router-dom';
+import { useCookies } from 'react-cookie'
 
-const Navbar = ({children, menuItems}) => {
+const Navbar = ({ children, menuItems }) => {
+    let navigate = useNavigate()
+    const [cookie, setCookie, removeCookie] = useCookies(['authToken'])
+    
+    const logout = () => {
+        removeCookie('authToken')
+        navigate('/')
+    }
+
     return (
         <div className="drawer">
             <input id="my-drawer" type="checkbox" className="drawer-toggle" />
@@ -19,14 +31,19 @@ const Navbar = ({children, menuItems}) => {
                             MyBox
                         </NavLink>
                     </div>
+                    <div className="navbar-end">
+                        <Button onClick={logout} className="mr-4" color="ghost" name="sair"><AiOutlineLogout className="pl-2" size={30} /></Button>
+                    </div>
                 </div>
-                {children}
+                <div className="w-screen flex justify-center py-10">
+                    {children}
+                </div>
             </div>
             <div className="drawer-side">
                 <label htmlFor="my-drawer" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80 bg-base-100 text-base-content">
                     {menuItems.map(menuItem => {
-                       return <li><NavLink to={menuItem.link}>{menuItem.name}</NavLink></li>
+                        return <li key={menuItem.id}><NavLink to={menuItem.link}>{menuItem.name}</NavLink></li>
                     })}
                 </ul>
             </div>
