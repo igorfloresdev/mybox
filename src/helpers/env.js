@@ -1,1 +1,1 @@
-export const ENV = 'https://mybox.vercel.app/api'
+export const ENV = 'https://my-json-server.typicode.com/igorfloresdev/mybox'
