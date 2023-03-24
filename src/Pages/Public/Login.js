@@ -18,7 +18,15 @@ const Login = () => {
 
   let navigate = useNavigate()
 
+  const wakeUpApi = () => {
+    axios.get(`${ENV}/users`)
+    .then(() => console.log('Waking up Glitch'))
+  } // Wake up glitch end-point aplication
+
+  wakeUpApi()
+
   useEffect(() => {
+
     if (cookies.authToken) {
       axios.get(`${ENV}/users?authToken=${cookies.authToken}`)
         .then(response => {
