@@ -1,1 +1,1 @@
-export const ENV = 'https://my-json-server.typicode.com/igorfloresdev/mybox'
+export const ENV = 'https://mybox-server.glitch.me'
