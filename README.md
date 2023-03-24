@@ -10,7 +10,7 @@
 
 ## Sobre
 
-O MY BOX é um projeto de controle de estoque criado com React utilizando a Framwork Tailwind para CSS e a biblioteca de componentes Daisy UI.
+O MY BOX é um projeto de controle de estoque criado com React, utilizando a Framwork Tailwind para CSS e a biblioteca de componentes Daisy UI.
 
 <br/>
 
@@ -57,69 +57,33 @@ user@user:~$ json-server -p 3001 --watch db.json
 
 <br/>
 
-## Available Scripts
+## Build (Produção)
 
-In the project directory, you can run:
+Para realizar o build do projeto utilize o comando abaixo
 
-### `npm start`
+```console
+user@user:~$ yarn build
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<br/>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Configurando End-Point
 
-### `npm test`
+Para configurar o end-point do projeto basta mudar o arquivo env.js localizado na pasta src/helpers, e apontar para o end-point gerado pelo json-server na etapa 3.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<br>
+<br>
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<center>
+    
+# Obrigado por visitar ! 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Esse projeto foi criado com muito ❤️ e ☕ por Igor Flores
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+</center>
 
-### `npm run eject`
+<br>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+contato: dev.igorflores@gmail.com
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
