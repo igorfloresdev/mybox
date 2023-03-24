@@ -6,7 +6,7 @@ import Card from '../../components/Card'
 import Input from '../../components/Input'
 import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-hot-toast'
-import { ENV } from '../helpers/env'
+import { ENV } from '../../helpers/env'
 
 const Login = () => {
 

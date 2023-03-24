@@ -9,7 +9,7 @@ import { useCookies } from 'react-cookie'
 import Modal from '../../components/Modal'
 import { BsFillTrashFill } from 'react-icons/bs'
 import { toast } from 'react-hot-toast'
-import { ENV } from '../helpers/env'
+import { ENV } from '../../helpers/env'
 
 const Products = () => {
     const [cookie] = useCookies()

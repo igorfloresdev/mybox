@@ -8,7 +8,7 @@ import axios from 'axios'
 import { toast } from 'react-hot-toast'
 import Modal from '../../components/Modal'
 import { BsFillTrashFill } from 'react-icons/bs'
-import { ENV } from '../helpers/env'
+import { ENV } from '../../helpers/env'
 
 const Categories = () => {
   const [cookie] = useCookies()

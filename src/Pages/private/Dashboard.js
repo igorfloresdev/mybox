@@ -7,7 +7,7 @@ import axios from 'axios'
 import Input from '../../components/Input'
 import { FiMoreHorizontal } from 'react-icons/fi'
 import {AiFillCloseCircle} from 'react-icons/ai'
-import { ENV } from '../helpers/env'
+import { ENV } from '../../helpers/env'
 
 const Dashboard = () => {
     const [cookies] = useCookies()

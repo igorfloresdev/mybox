@@ -1,0 +1,1 @@
+export const ENV = 'https://mybox.vercel.app/api'

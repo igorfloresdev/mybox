@@ -3,7 +3,7 @@ import React, { useEffect } from 'react'
 import { useCookies } from 'react-cookie'
 import { Outlet, useNavigate } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
-import { ENV } from '../helpers/env'
+import { ENV } from '../../helpers/env'
 
 const Auth = () => {
 
