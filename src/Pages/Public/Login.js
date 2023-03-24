@@ -23,9 +23,9 @@ const Login = () => {
     .then(() => console.log('Waking up Glitch'))
   } // Wake up glitch end-point aplication
 
-  wakeUpApi()
-
   useEffect(() => {
+
+    wakeUpApi()
 
     if (cookies.authToken) {
       axios.get(`${ENV}/users?authToken=${cookies.authToken}`)
