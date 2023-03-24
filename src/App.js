@@ -1,6 +1,7 @@
 import React from 'react';
 import { Toaster } from 'react-hot-toast';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import About from './pages/private/About';
 import Auth from './pages/private/Auth';
 import Categories from './pages/private/Categories';
 import Dashboard from './pages/private/Dashboard';
@@ -29,6 +30,7 @@ function App() {
           <Route path="/auth/dashboard" element={<Dashboard />} />
           <Route path="/auth/products" element={<Products />} />
           <Route path="/auth/categories" element={<Categories />} />
+          <Route path="/auth/about" element={<About />} />
         </Route>
         <Route path='*' element={<NotFound />} />
       </Routes>

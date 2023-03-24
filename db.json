@@ -9,42 +9,68 @@
   ],
   "categories": [
     {
-      "id": 1,
       "userId": 1,
-      "name": "Hardware"
+      "name": "Hardware",
+      "id": 1
     },
     {
-      "id": 2,
       "userId": 1,
-      "name": "Livros"
+      "name": "Livros",
+      "id": 2
     },
     {
-      "id": 3,
       "userId": 1,
-      "name": "Limpeza"
+      "name": "Limpeza",
+      "id": 3
+    },
+    {
+      "userId": 1,
+      "name": "Móveis",
+      "id": 4
     }
   ],
   "products": [
     {
-      "userId": "1",
-      "categorieName": "Limpeza",
-      "quantity": "12313",
-      "name": "teste",
+      "categoriesId": 1,
+      "userId": 1,
+      "quantity": 14,
+      "name": "Placa Mãe",
       "id": 1
     },
     {
-      "categorieName": "Hardware",
-      "userId": "1",
-      "quantity": "1313",
-      "name": "123123",
+      "userId": 1,
+      "categoriesId": 1,
+      "quantity": 27,
+      "name": "Memoria Ram",
       "id": 2
     },
     {
-      "userId": "1",
-      "categorieName": "Hardware",
-      "quantity": "123",
-      "name": "aaa",
+      "userId": 1,
+      "categoriesId": 2,
+      "quantity": 11,
+      "name": "Mangá Berserk ",
       "id": 3
+    },
+    {
+      "categoriesId": 3,
+      "userId": 1,
+      "quantity": 0,
+      "name": "Sabão em pó",
+      "id": 4
+    },
+    {
+      "categoriesId": 3,
+      "userId": 1,
+      "quantity": 0,
+      "name": "Sabonete",
+      "id": 5
+    },
+    {
+      "categoriesId": 4,
+      "userId": 1,
+      "quantity": 2,
+      "name": "Sofá",
+      "id": 6
     }
   ]
 }

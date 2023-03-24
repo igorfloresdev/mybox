@@ -5,7 +5,7 @@ const Input = ({ type = "text", placeholder, className, getValue, label, size, r
     }
 
     return (
-        <div>
+        <div className={`${className}`}>
             {label &&
                 <label className="label">
                     <span className="label-text">{label}</span>
@@ -15,8 +15,9 @@ const Input = ({ type = "text", placeholder, className, getValue, label, size, r
                 onChange={inputValue}
                 size={size}
                 type={type}
+                min={0}
                 placeholder={placeholder}
-                className={`input input-bordered w-full max-w-xs ${className}`}
+                className={`input input-bordered w-full ${className}`}
                 value={value}
             />
         </div>

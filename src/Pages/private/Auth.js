@@ -3,16 +3,17 @@ import React, { useEffect } from 'react'
 import { useCookies } from 'react-cookie'
 import { Outlet, useNavigate } from 'react-router-dom'
 import Navbar from '../../components/Navbar'
+import { ENV } from '../helpers/env'
 
 const Auth = () => {
 
-  const [cookies, setCookie, removeCookie] = useCookies(['authToken'])
+  const [cookies] = useCookies(['authToken'])
 
   const navigate = useNavigate()
 
   useEffect(() => {
     if (cookies) {
-      axios.get(`http://localhost:3001/users?authToken=${cookies.authToken}`)
+      axios.get(`${ENV}/users?authToken=${cookies.authToken}`)
       .then(response => {
         if (!response.data[0]){
           navigate('/')
@@ -41,6 +42,11 @@ const Auth = () => {
       id: 3,
       name: 'Categorias',
       link: '/auth/categories'
+    },
+    {
+      id: 4,
+      name: 'Sobre',
+      link: '/auth/about'
     }
   ]
 
